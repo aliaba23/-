@@ -1,60 +1,130 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="خدمات تعمیر، سرویس و اسیدشویی پکیج دیواری در پرند، رباط کریم و شهریار. تماس مستقیم با تعمیرکار.">
-<title>تعمیر و سرویس پکیج دیواری | پرند، رباط کریم، شهریار</title>
+<meta name="theme-color" content="#111827">
+<title>تعمیر پکیج دیواری در پرند، رباط کریم و شهریار | خدمات در منزل</title>
+<meta name="description" content="تعمیر، سرویس و رسوب‌زدایی پکیج دیواری در پرند، رباط کریم و شهریار. تماس مستقیم با شماره ۰۹۱۹۰۰۴۶۶۳۲ برای هماهنگی خدمات در منزل.">
+<meta name="robots" content="index,follow">
 <style>
-:root{--gold:#e5b94b;--dark:#111318;--panel:#1d2027;--muted:#c5c7ce}
+:root{--navy:#111827;--navy2:#1f2937;--gold:#f4b942;--cream:#f8fafc;--muted:#64748b;--green:#12805c}
 *{box-sizing:border-box}
-body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#111318;color:#f8f8fa;line-height:1.9}
-header{padding:22px 16px;text-align:center;background:linear-gradient(135deg,#292d35,#101114);border-bottom:3px solid var(--gold)}
-.logo{font-size:14px;color:var(--gold);letter-spacing:1px}
-h1{font-size:clamp(25px,5vw,42px);margin:8px 0}
-header p{margin:0;color:var(--muted)}
-main{max-width:900px;margin:auto;padding:22px 16px}
-.hero{background:linear-gradient(145deg,#252932,#191b21);border:1px solid #3a3d45;border-radius:18px;padding:25px 20px;text-align:center}
-.hero h2{font-size:25px;margin-top:0}
-.hero p{color:var(--muted)}
-.btn{display:inline-block;text-decoration:none;font-weight:bold;border-radius:10px;padding:12px 20px;margin:7px 4px}
-.call{background:var(--gold);color:#171717}
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:13px;margin:20px 0}
-.card{background:var(--panel);border:1px solid #343741;border-radius:14px;padding:17px}
-.card h3{margin:0 0 5px;color:var(--gold)}
-.area{text-align:center;border:1px solid #5a4b25;background:#211f19;border-radius:14px;padding:18px;margin-top:18px}
-.area strong{color:var(--gold)}
-footer{text-align:center;padding:22px 12px;color:#b9bbc3;border-top:1px solid #30323a;font-size:13px}
-.phone{font-size:clamp(23px,5vw,34px);color:var(--gold);font-weight:bold;direction:ltr;display:inline-block}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#f8fafc;color:#172033;line-height:1.9}
+a{text-decoration:none}
+.wrap{width:min(1120px,92%);margin:auto}
+.topbar{background:#0b1220;color:#dbe4f0;font-size:13px;padding:8px 0}
+.topbar .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+header{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:13px 0}
+.brand{display:flex;align-items:center;gap:10px;color:var(--navy);font-weight:900;font-size:18px}
+.logo{width:44px;height:44px;border-radius:14px;background:var(--gold);display:grid;place-items:center;font-size:25px}
+.navlinks{display:flex;gap:20px;align-items:center;font-size:14px}
+.navlinks a{color:#334155}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border-radius:12px;font-weight:800;transition:.2s}
+.btn-gold{background:var(--gold);color:#111827;box-shadow:0 8px 20px #f4b94235}
+.btn-dark{background:var(--navy);color:#fff}
+.btn:hover{transform:translateY(-2px)}
+.hero{background:radial-gradient(circle at 15% 10%,#34445c 0,transparent 38%),linear-gradient(125deg,#111827,#1f2937);color:white;padding:58px 0 62px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
+.eyebrow{display:inline-flex;background:#ffffff15;border:1px solid #ffffff2a;color:#fbd780;border-radius:30px;padding:5px 13px;font-size:13px}
+h1{font-size:clamp(28px,4.2vw,46px);line-height:1.55;margin:16px 0}
+.hero p{color:#d6deea;font-size:17px;max-width:600px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.hero-note{font-size:13px!important;color:#c1ccda!important;margin-top:15px}
+.hero-image{position:relative}
+.hero-image img{width:100%;height:365px;object-fit:cover;border-radius:24px;border:4px solid #ffffff20;box-shadow:0 25px 55px #0005}
+.image-tag{position:absolute;bottom:18px;right:18px;background:#fff;color:#111827;border-radius:14px;padding:10px 15px;font-weight:800;box-shadow:0 8px 24px #0002}
+.stats{margin-top:-24px;position:relative;z-index:2}
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);background:white;border-radius:18px;box-shadow:0 12px 35px #0f172a12;padding:20px}
+.stat{text-align:center;border-left:1px solid #e2e8f0}
+.stat:last-child{border-left:0}
+.stat strong{display:block;color:#111827;font-size:18px}
+.stat span{color:var(--muted);font-size:13px}
+section{padding:66px 0}
+.section-head{text-align:center;max-width:720px;margin:0 auto 32px}
+.section-head .kicker{color:#b77908;font-weight:900;font-size:13px}
+h2{font-size:clamp(24px,3vw,34px);margin:5px 0 10px;color:#111827}
+.section-head p{color:var(--muted);margin:0}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;border:1px solid #e7ebf0;border-radius:18px;overflow:hidden;box-shadow:0 8px 25px #0f172a08}
+.card img{width:100%;height:210px;object-fit:cover;display:block}
+.card-body{padding:19px}
+.card h3{margin:0 0 8px;font-size:19px}
+.card p{color:var(--muted);font-size:14px;margin:0}
+.icon{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:#fff4d8;color:#956000;font-size:22px;margin-bottom:12px}
+.benefits{background:#eef2f7}
+.benefit-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.benefit{display:flex;gap:14px;background:#fff;border-radius:15px;padding:18px;border:1px solid #e4e9f0}
+.check{flex:0 0 34px;height:34px;border-radius:10px;background:#e0f5eb;color:#08764d;display:grid;place-items:center;font-weight:900}
+.benefit h3{font-size:16px;margin:0 0 4px}
+.benefit p{font-size:13px;color:var(--muted);margin:0}
+.areas{background:#111827;color:white}
+.areas h2{color:white}
+.areas .section-head p{color:#cbd5e1}
+.area-pills{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.pill{padding:12px 20px;border:1px solid #ffffff30;border-radius:40px;background:#ffffff0d;font-weight:800}
+.contact-box{background:linear-gradient(120deg,#fff,#fff8e8);border:1px solid #f2dba4;border-radius:22px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.contact-box h2{margin:0 0 6px}
+.contact-box p{margin:0;color:var(--muted)}
+.phone{font-size:clamp(22px,3vw,30px);font-weight:900;color:#111827;direction:ltr;display:inline-block}
+footer{background:#0b1220;color:#cbd5e1;padding:28px 0;font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+footer a{color:#fbd780}
+.mobile-call{display:none}
+@media(max-width:800px){
+ .navlinks{display:none}.hero{padding:38px 0 50px}.hero-grid{grid-template-columns:1fr;gap:24px}.hero-image img{height:260px}
+ .services{grid-template-columns:1fr}.card img{height:230px}.benefit-grid{grid-template-columns:1fr}
+ .stats-grid{padding:15px 8px}.stat strong{font-size:15px}.stat span{font-size:11px}
+ section{padding:48px 0}.contact-box{padding:22px}
+ .mobile-call{display:flex;position:fixed;bottom:12px;left:12px;right:12px;z-index:20;box-shadow:0 8px 24px #0003}
+ body{padding-bottom:66px}
+}
 </style>
-  <meta name="google-site-verification" content="j2e1kuHjtOrfDBw1rmAmc-RwQNFpw5hcQmepCd6Vjkg" />
-<meta name="google-site-verification" content="9xzxUa0OIW2N_gcMsSQjYYc-SEPfxmwWUJbcGy650cE" /></head>
-<meta name="google-site-verification" content="9xzxUa0OIW2N_gcMsSQjYYc-SEPfxmwWUJbcGy650cE" />
+</head>
 <body>
-<header>
-  <div class="logo">خدمات فنی و تعمیرات</div>
-  <h1>تعمیر و سرویس پکیج دیواری</h1>
-  <p>خدمات در منزل با هماهنگی تلفنی</p>
-</header>
+<div class="topbar"><div class="wrap"><span>خدمات تعمیر و سرویس پکیج دیواری در منزل</span><span>پاسخ‌گویی و هماهنگی تلفنی</span></div></div>
+<header><div class="wrap nav">
+<a class="brand" href="#home"><span class="logo">♨</span><span>تعمیرات پکیج دیواری</span></a>
+<nav class="navlinks"><a href="#services">خدمات</a><a href="#why-us">مزیت‌ها</a><a href="#areas">مناطق تحت پوشش</a><a href="#contact">تماس</a></nav>
+<a class="btn btn-dark" href="tel:+989190046632">☎ تماس مستقیم</a>
+</div></header>
 <main>
-  <section class="hero">
-    <h2>پکیج دیواری شما درست کار نمی‌کند؟</h2>
-    <p>برای هماهنگی تعمیر، سرویس دوره‌ای و اسیدشویی پکیج دیواری تماس بگیرید.</p>
-    <a class="btn call" href="tel:09190046632">تماس مستقیم</a>
-    <div><span class="phone">09190046632</span></div>
-  </section>
-  <section class="services" aria-label="خدمات">
-    <article class="card"><h3>تعمیر پکیج</h3><p>بررسی ایرادها و هماهنگی برای تعمیر پکیج دیواری.</p></article>
-    <article class="card"><h3>سرویس دوره‌ای</h3><p>سرویس و بررسی عملکرد دستگاه برای کارکرد بهتر.</p></article>
-    <article class="card"><h3>رسوب‌زدایی و اسیدشویی</h3><p>بررسی نیاز دستگاه به رسوب‌زدایی و انجام کار متناسب با وضعیت آن.</p></article>
-  </section>
-  <section class="area">
-    <p>محدوده خدمات</p>
-    <strong>پرند • رباط کریم • شهریار</strong>
-    <p>برای پرسیدن هزینه و هماهنگی زمان، تماس بگیرید.</p>
-    <a class="btn call" href="tel:09190046632">تماس: 09190046632</a>
-  </section>
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div>
+<span class="eyebrow">خدمات در منزل • پرند، رباط کریم و شهریار</span>
+<h1>تعمیر و سرویس <span style="color:#f4b942">پکیج دیواری</span><br>با هماهنگی تلفنی</h1>
+<p>برای بررسی خرابی پکیج، سرویس دوره‌ای، رفع مشکل آب گرم و گرمایش یا رسوب‌زدایی مبدل تماس بگیرید.</p>
+<div class="hero-actions"><a class="btn btn-gold" href="tel:+989190046632">تماس: ۰۹۱۹۰۰۴۶۶۳۲</a><a class="btn" style="border:1px solid #ffffff55;color:white" href="#services">مشاهده خدمات ↓</a></div>
+<p class="hero-note">خدمات در منزل با هماهنگی قبلی؛ هزینه و امکان انجام کار پس از بررسی مشکل اعلام می‌شود.</p>
+</div>
+<div class="hero-image"><img src="https://images.pexels.com/photos/7859953/pexels-photo-7859953.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="تکنسین در حال بررسی و تعمیر سیستم گرمایشی" fetchpriority="high"><div class="image-tag">🔧 تعمیر و عیب‌یابی پکیج</div></div>
+</div></section>
+<div class="wrap stats"><div class="stats-grid">
+<div class="stat"><strong>تعمیر و عیب‌یابی</strong><span>بررسی ایرادهای رایج پکیج</span></div>
+<div class="stat"><strong>سرویس دوره‌ای</strong><span>کمک به عملکرد بهتر دستگاه</span></div>
+<div class="stat"><strong>خدمات در منزل</strong><span>در محدوده شهرهای اعلام‌شده</span></div>
+</div></div>
+<section id="services"><div class="wrap">
+<div class="section-head"><span class="kicker">خدمات ما</span><h2>چه خدماتی ارائه می‌شود؟</h2><p>برای هماهنگی تعمیر یا سرویس پکیج دیواری، نوع مشکل دستگاه را تلفنی توضیح دهید.</p></div>
+<div class="services">
+<article class="card"><img src="https://images.pexels.com/photos/34938439/pexels-photo-34938439.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="بررسی و تعمیر سیستم گرمایشی" loading="lazy"><div class="card-body"><div class="icon">🛠️</div><h3>تعمیر و عیب‌یابی</h3><p>بررسی روشن نشدن دستگاه، افت گرمایش، سرد و گرم شدن آب و خطاهای متداول پکیج.</p></div></article>
+<article class="card"><img src="https://images.pexels.com/photos/34938442/pexels-photo-34938442.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="تکنسین در حال سرویس تجهیزات گرمایشی" loading="lazy"><div class="card-body"><div class="icon">♨️</div><h3>سرویس پکیج دیواری</h3><p>بررسی وضعیت کلی دستگاه و قطعات قابل سرویس برای کمک به کارکرد مناسب پکیج.</p></div></article>
+<article class="card"><img src="https://images.pexels.com/photos/7859953/pexels-photo-7859953.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="رسیدگی فنی به سیستم گرمایشی" loading="lazy"><div class="card-body"><div class="icon">💧</div><h3>رسوب‌زدایی مبدل</h3><p>بررسی نیاز دستگاه به رسوب‌زدایی و انجام کار در صورت نیاز و متناسب با وضعیت مبدل.</p></div></article>
+</div></div></section>
+<section class="benefits" id="why-us"><div class="wrap">
+<div class="section-head"><span class="kicker">چرا تماس بگیرید؟</span><h2>هماهنگی روشن و خدمات متناسب با مشکل</h2><p>قبل از مراجعه، مشکل دستگاه و محدوده محل را تلفنی مطرح کنید.</p></div>
+<div class="benefit-grid">
+<div class="benefit"><span class="check">✓</span><div><h3>هماهنگی قبل از مراجعه</h3><p>زمان و امکان ارائه خدمات از طریق تماس هماهنگ می‌شود.</p></div></div>
+<div class="benefit"><span class="check">✓</span><div><h3>تمرکز بر عیب‌یابی</h3><p>شرح علائم خرابی کمک می‌کند بررسی اولیه هدفمندتر باشد.</p></div></div>
+<div class="benefit"><span class="check">✓</span><div><h3>توضیح هزینه پیش از انجام کار</h3><p>هزینه نهایی با توجه به ایراد و قطعات موردنیاز مشخص می‌شود.</p></div></div>
+<div class="benefit"><span class="check">✓</span><div><h3>توجه به ایمنی</h3><p>کارهای مربوط به گاز و قطعات داخلی باید توسط فرد متخصص انجام شود.</p></div></div>
+</div></div></section>
+<section class="areas" id="areas"><div class="wrap"><div class="section-head"><span class="kicker">محدوده خدمات</span><h2>پرند، رباط کریم و شهریار</h2><p>هنگام تماس، محله یا نشانی حدودی خود را بگویید تا امکان مراجعه بررسی شود.</p></div><div class="area-pills"><span class="pill">📍 پرند</span><span class="pill">📍 رباط کریم</span><span class="pill">📍 شهریار</span></div></div></section>
+<section id="contact"><div class="wrap"><div class="contact-box"><div><h2>برای هماهنگی تماس بگیرید</h2><p>تعمیر، سرویس و رسوب‌زدایی پکیج دیواری در منزل</p><div class="phone">09190046632</div></div><a class="btn btn-gold" href="tel:+989190046632">☎ تماس با تعمیرکار</a></div></div></section>
 </main>
-<footer>تعمیر، سرویس و اسیدشویی پکیج دیواری | پرند، رباط کریم و شهریار</footer>
+<footer><div class="wrap"><span>تعمیر و سرویس پکیج دیواری | پرند، رباط کریم، شهریار</span><span>تماس: <a href="tel:+989190046632">۰۹۱۹۰۰۴۶۶۳۲</a></span></div></footer>
+<a class="btn btn-gold mobile-call" href="tel:+989190046632">☎ تماس مستقیم با ۰۹۱۹۰۰۴۶۶۳۲</a>
 </body>
 </html>
